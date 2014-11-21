@@ -14,22 +14,23 @@ foreman:
 foreman_proxy:
   custom_repo: true
 puppet:
-  server: true
+  server: false
 foreman::cli: true
 foreman::plugin::bootdisk: true
 foreman::plugin::chef: false
-foreman::plugin::default_hostgroup: false
-foreman::plugin::discovery: false
-foreman::plugin::tasks: false
-foreman::plugin::hooks: false
-foreman::plugin::puppetdb: false
+foreman::plugin::default_hostgroup: true
+foreman::plugin::discovery: true
+foreman::plugin::hooks: true
+foreman::plugin::tasks: true
+foreman::plugin::hooks: true
+foreman::plugin::puppetdb: true
 foreman::plugin::setup: true
-foreman::plugin::templates: false
-foreman::compute::ec2: false
-foreman::compute::gce: false
-foreman::compute::libvirt: false
-foreman::compute::openstack: false
-foreman::compute::ovirt: false
-foreman::compute::rackspace: false
-foreman::compute::vmware: false
+foreman::plugin::templates: true
+foreman::compute::ec2: true
+foreman::compute::gce: true
+foreman::compute::libvirt: true
+foreman::compute::openstack: true
+foreman::compute::ovirt: true
+foreman::compute::rackspace: true
+foreman::compute::vmware: true
 foreman_proxy::plugin::pulp: false
