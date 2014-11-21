@@ -23,5 +23,5 @@ you want to use an external DB, edit the answers file and provide DB connection 
 
 # Tags Available
     
-`latest`, `1.6` -- Latest stable release
-`1.7`           
+ - `latest`, `1.6` -- Latest stable release
+ - `1.7`           
