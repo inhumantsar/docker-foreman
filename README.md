@@ -18,7 +18,7 @@ you want to use an external DB, edit the answers file and provide DB connection 
 
 ## For production: 
 
-`docker pull inhumantsar/foreman:latest && docker run -d -p 443:443 --name foreman-latest inhumantsar/foreman:latest
+`docker pull inhumantsar/foreman:latest && docker run -d -p 443:443 --name foreman-latest inhumantsar/foreman:latest`
 
 
 # Tags Available
