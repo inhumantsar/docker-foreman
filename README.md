@@ -1,9 +1,9 @@
 docker-foreman
 ==============
 
-This image will start you off with the Foreman Installer and leave you to decide on the details. For most purposes, the defaults will do. That simply means doing your first run with -it or using an answers file. A specific hostname should be passed as the default hostname won't match facter's fqdn. An answers file can be provided by running the image with `docker run -it ... -v /path/to/answers:/etc/foreman/foreman-installer-answers.yaml inhumantsar/foreman /usr/sbin/foreman-installer -i`
+A specific hostname should be passed as the default hostname won't match facter's fqdn. Otherwise, this image will start you off with the Foreman Installer defaults and install away. For most purposes, the defaults will do. If you want something other than the defaults, use an answers file. An answers file can be provided by running the image with `docker run -it ... -v /path/to/answers:/etc/foreman/foreman-installer-answers.yaml inhumantsar/foreman /usr/sbin/foreman-installer -i`
 
-*TL;DR: You have to run this interactively the first time, or else use an answers file that you provide.* 
+*TL;DR: Love the defaults or else use an answers file.* 
 
 Some things you'll probably want to think about changing:
   - `foreman-proxy / daemon`: Even if you don't set this to false, the start script will attempt to itself anyway.
@@ -27,4 +27,4 @@ Note that the database is stored within the container so do not remove the conta
 # Tags Available
     
  - `latest`, `1.7` -- latest stable
- - `1.6` -- not supported
+ - `1.6` -- available but not supported
