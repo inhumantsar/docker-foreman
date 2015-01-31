@@ -44,6 +44,12 @@ ADD resources/start.sh /start.sh
 ADD resources/start_postgresql.sh /start_postgresql.sh
 ADD resources/start_foreman-proxy.sh /start_foreman-proxy.sh
 
+### strip out defaults that we don't want
+# i'm sure some people want them but screw em. they can copypasta
+# the sample (ie: foreman's defaults) and mount it as a volume
+# eg: -v /path/to/default-answers.yaml:/etc/foreman/foreman-answers.yaml
+RUN rm /etc/foreman/foreman-installer-answers.yaml
+
 ### just in case
 RUN chown -R root:root /etc/supervisord*
 RUN mkdir -p /var/log/supervisord
