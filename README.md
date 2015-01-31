@@ -8,7 +8,7 @@ This image will start you off with the Foreman Installer and leave you to decide
 Some things you'll probably want to think about changing:
   - `foreman-proxy / daemon`: Even if you don't set this to false, the start script will attempt to itself anyway.
 
-Puppet is installed from the latest stable versions from the Puppet Labs apt repo. Should install 3.7.3 at time of writing. The [Docker Foreman plugin|https://github.com/theforeman/foreman-docker] is installed post-setup before the first launch.
+Puppet is installed from the latest stable versions from the Puppet Labs apt repo. Should install 3.7.3 at time of writing. The [Docker Foreman plugin](https://github.com/theforeman/foreman-docker) is installed post-setup before the first launch.
 
 Note that the database is stored within the container so do not remove the container unless you don't mind losing your DB! If you want to use an external DB, provide an answer file DB connection details.
 
